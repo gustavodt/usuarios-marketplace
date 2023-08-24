@@ -39,7 +39,7 @@ public class UsuarioService {
 	@SuppressWarnings("null")
 	private List<String> fracionar(String nomeCompleto) {
 		List<String> nomeFracionado = new ArrayList<String>();
-		if (nomeCompleto != null || nomeCompleto.isBlank()) {
+		if (!Strings.isNullOrEmpty(nomeCompleto)) {
 			nomeCompleto = nomeCompleto.trim();
 			String[] partesDoNome = nomeCompleto.split(" ");
 			for (String parte : partesDoNome) {
