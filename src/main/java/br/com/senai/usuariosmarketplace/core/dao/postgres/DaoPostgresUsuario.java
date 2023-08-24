@@ -4,8 +4,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import javax.naming.spi.DirStateFactory.Result;
-
 import br.com.senai.usuariosmarketplace.core.dao.DaoUsuario;
 import br.com.senai.usuariosmarketplace.core.dao.ManagerDb;
 import br.com.senai.usuariosmarketplace.core.domain.Usuario;
