@@ -62,6 +62,7 @@ public class UsuarioService {
 		
 		this.dao.alterar(usuarioAlterado);
 		
+		return usuarioAlterado;
 	}
 
 	private String removerAcentoDo(String nomeCompleto) {
