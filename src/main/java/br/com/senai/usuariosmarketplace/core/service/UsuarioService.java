@@ -68,6 +68,9 @@ public class UsuarioService {
 				loginGerado = partesDoNome.get(0) + "." + partesDoNome.get(1);
 				usuarioEncontrado = dao.buscarPor(loginGerado);
 				if (usuarioEncontrado == null) {
+					if(loginGerado.length() > 50) {
+						loginGerado = loginGerado.substring(0, 40);
+					}
 					return loginGerado;
 				}
 			}
@@ -75,6 +78,7 @@ public class UsuarioService {
 			String loginDisponivel = null;
 			while (usuarioEncontrado != null) {
 				loginDisponivel = loginGerado + ++proximoSequencial;
+				
 				usuarioEncontrado = dao.buscarPor(loginDisponivel);
 			}
 			loginGerado = loginDisponivel;
