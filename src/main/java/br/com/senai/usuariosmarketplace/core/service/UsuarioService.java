@@ -69,7 +69,6 @@ public class UsuarioService {
 		return Normalizer.normalize(nomeCompleto, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "");
 	}
 
-	@SuppressWarnings("null")
 	private List<String> fracionar(String nomeCompleto) {
 		List<String> nomeFracionado = new ArrayList<String>();
 		if (!Strings.isNullOrEmpty(nomeCompleto)) {
