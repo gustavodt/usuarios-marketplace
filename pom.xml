@@ -4,6 +4,12 @@
 	<artifactId>usuarios-marketplace</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.28</version>
+    <scope>provided</scope>
 		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
 <dependency>
     <groupId>com.google.guava</groupId>
